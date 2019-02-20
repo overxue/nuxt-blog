@@ -24,7 +24,9 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '@/common/stylus/index.styl'
+  ],
 
   /*
   ** Plugins to load before mounting the App

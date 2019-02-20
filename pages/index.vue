@@ -1,68 +1,33 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        hahaha
-      </h1>
-      <h2 class="subtitle">
-        My prime Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
+  <div class="home">
+    <div class="content">
+      <div class="avatar">
+        <!--<img width="120" height="120" src="./avatar.jpg" class="avatar-item">-->
       </div>
+      <h1 class="description">
+        Nothing is impossible.
+      </h1>
+      <ul class="tab">
+        <li class="tab-item">
+          <a class="tab-link" to="/blog">博文</a>
+        </li>
+        <li class="tab-item">
+          <a class="tab-link" href="https://weibo.com/3090183841/profile?topnav=1&wvr=6&is_all=1">微博</a>
+        </li>
+        <li class="tab-item">
+          <a class="tab-link" href="https://github.com/overxue" target="_blank">GitHub</a>
+        </li>
+        <li class="tab-item">
+          <a class="tab-link" to="/me">关于我</a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
