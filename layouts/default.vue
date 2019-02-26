@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
-<style>
+<style lang="stylus">
+  #__nuxt, #__layout
+    height: 100%
+    width: 100%
 </style>
